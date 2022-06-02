@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+.blogContainer {
+  color: white;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blogContainer .blog {
+  width: 25%;
+  background-color: #232222fe;
+  border: 1px solid white;
+  margin: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  opacity: 1;
+  transition: 0.7s;
+  animation: appear 1s 1;
+}
+
+.blog:hover {
+  transform: scale(1.02);
+}
+
+.blog .coverImge img {
+  height: 200px;
+  width: 100%;
+}
+
+.blog .title {
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.blog .details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.blog .details .publish {
+  margin-right: 1rem;
+  padding: 0.3rem;
+}
+
+.blog .details .tags {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tags .tag0 {
+  background-color: blue;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+.tags .tag1 {
+  background-color: red;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+.tags .tag2 {
+  background-color: green;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+.tags .tag3 {
+  background-color: #ff6e00db;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  margin-top: 1rem;
+}
+
+.blog .desc {
+  margin-top: 1rem;
+}
+
+.blog .url {
+  margin-top: 1rem;
+}
+
+.url a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #f9ab25;
+  cursor: pointer;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+}
+
+.main_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  max-width: 400px;
+  margin: 2rem;
+  box-shadow: none;
+  background: none;
+  width: 30%;
+}
+
+.card-side {
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.card-side img {
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.card-side.front {
+  background-color: #3c3b3bfe;
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+
+.card-side.back .text {
+  padding: 1rem;
+}
+
+.card-side.back .text .title {
+  font-size: 1.8rem;
+}
+
+.card-side.back .text .info {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.card-side.back .text .links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.card-side.back .text .links .try {
+  margin-right: 1rem;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  padding: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-side.back .text .links .repo {
+  margin-right: 1rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.card-side.back .text .links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* // contact */
+
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.contactMe .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.icons .linkedIN,
+.icons .insta,
+.icons .twitter,
+.icons .github {
+  padding: 2rem;
+}
+
+.linkedIN a,
+.insta a,
+.twitter a,
+.github a {
+  text-decoration: none;
+  color: white;
+}
+
+.linkedIN a :hover {
+  transform: scale(1.15);
+}
+
+.twitter a :hover {
+  transform: scale(1.15);
+}
+
+.insta a :hover {
+  transform: scale(1.15);
+}
+
+.github a :hover {
+  transform: scale(1.15);
+}
+
+.contactMe p {
+  font-size: 2rem;
+}
+
+.contactMe .mail {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #232222fe;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.mail .email {
+  padding: 1rem;
+}
+
+.mail .email i {
+  color: white;
+}
+
+.mail .emailID {
+  padding: 1rem;
+  margin-top: 0.7rem;
+  font-size: 1.3rem;
+}
+
+.emailID a {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 370px) and (max-width: 420px) {
+  .blogContainer .blog {
+    width: 100%;
+  }
+
+  .main_div {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .main_div .card {
+    margin: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .main_div .first{
+    margin-top: 60rem;
+  }
+
+  .card .card-side.front {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: inherit;
+    width: fit-content;
+  }
+
+  .card .back {
+    width: 90vw;
+    margin-left: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 950px) {
+  .blogContainer .blog {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main_div .card {
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .main_div .second,
+  .main_div .third,
+  .main_div .fourth,
+  .main_div .fifth {
+    margin-top: 25rem;
+  }
+
+  .card-side.front img {
+    width: 250px;
+  }
+
+  .icons .linkedIN,
+  .icons .insta,
+  .icons .twitter,
+  .icons .github {
+    padding: 0.7rem;
+  }
+
+  .contactMe .mail{
+    padding: 0.3rem;
+  }
+
+  .contactMe .email{
+    padding: 0;
+    margin-top: 1rem;
+  } 
+
+  .contactMe .emailID{
+    font-size: 0.9rem;
+  }
+
+}
+
+@media screen and (min-width: 421px) and (max-width: 500px) {
+  .blogContainer .blog {
+    width: 100%;
+  }
+
+  .main_div {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .main_div:nth-child(2) {
+    margin-top: 30rem;
+  }
+
+  .main_div .card {
+    margin: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .card .card-side.front {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: inherit;
+    width: fit-content;
+  }
+
+  .card-side.front img {
+    width: 380px;
+  }
+
+  .card .back {
+    width: 90vw;
+    margin-left: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 361px) {
+  .blogContainer .blog {
+    width: 100%;
+  }
+
+  .main_div {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .main_div .card {
+    margin: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .main_div .first{
+    margin-top: 60rem;
+  }
+
+  .card .card-side.front {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: inherit;
+    width: fit-content;
+  }
+
+  .card-side.front img {
+    width: 325px;
+  }
+
+  .card .back {
+    width: 90vw;
+    margin-left: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 950px) {
+  .main_div .card {
+    width: 40%;
+  }
+
+  .card-side.front img {
+    width: 275px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .main_div .card {
+    width: 100%;
+  }
+
+  .card-side.front {
+    width: 100%;
+  }
+
+  .card-side.front img {
+    width: 350px;
+  }
+
+  .main_div .second,
+  .main_div .third,
+  .main_div .fourth,
+  .main_div .fifth {
+    margin-top: 18rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .main_div .third,
+  .main_div .fourth,
+  .main_div .fifth {
+    margin-top: 18rem;
+  }
+
+  .main_div .card {
+    margin-right: 8rem;
+    margin-left: 4rem;
+  }
+}
