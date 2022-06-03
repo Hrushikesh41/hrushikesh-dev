@@ -10,5 +10,5 @@ To Visit <a href='https://hrushikesh-dev.vercel.app/'>Click Here </a>
 
 OR
 
-# Scan the Qr Code below to visit the website.
-![Portfolio QR](
+# Scan the Qr Code below to Portfolio.
+![Portfolio QR](https://raw.githubusercontent.com/Hrushikesh41/hrushikesh-dev/main/src/assets/portfolio.png)
