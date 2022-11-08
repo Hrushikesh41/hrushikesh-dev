@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Navbar from './Navbar';
 import { Route, Switch } from 'react-router-dom';
 import { useState } from 'react';
+import ProjectCard from './ProjectCard';
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
           <Route path='/blogs' component={Blogs}></Route>
           <Route path='/projects' component={Projects}></Route>
           <Route path='/contact' component={Contact}></Route>
+          <Route path='/projectCard' component={ProjectCard}></Route>
         </Switch>
 
       </div>

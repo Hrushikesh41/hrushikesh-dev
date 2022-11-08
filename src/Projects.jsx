@@ -6,10 +6,12 @@ import toDo from "./assets/toDo.jpg";
 import weatherly from "./assets/weatherly.jpg";
 import blogPost from "./assets/blogPost.jpg";
 import getGit from "./assets/getGit.jpg";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
     return (
         <>
+            <ProjectCard coverImg={Resume} title="Resume Builder" content="Let's You Create Your Resume with provided templates. Also Providing Download Functionality in Pdf Format" tryIt="https://resume-builder-phi.vercel.app/" repo="https://github.com/Hrushikesh41/CodingMaster-Resume-Builder" />
             <div className="main_div">
                 <div className="card first">
                     <div className="card-side front">
