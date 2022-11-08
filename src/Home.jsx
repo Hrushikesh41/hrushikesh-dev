@@ -36,7 +36,7 @@ const Home = () => {
                     <div className="desc">
                         <div className="p1">Hey Folks, </div>
                         <div className="p2">I am Hrushikesh Kokardekar</div>
-                        <div className="p3">A Front-End Web Developer who likes to create Awesome and Responsive Designs</div>
+                        <div className="p3">A Full Stack Web Developer who likes to create Awesome Websites</div>
                         <div className="p4">
                             <a href="https://drive.google.com/file/d/16Tmm-U3FGKBYJFpOpiG2gpGIZDN72K7D/view?usp=sharing" target="_blank">Check Resume</a>
                         </div>
