@@ -1,13 +1,14 @@
 import React from 'react'
+import "./ProjectCard.css"
 
 export const ProjectCard = ({coverImg, title, content, tryIt, repo}) => {
     return (
         <>
             <div className='projectApp'>
-                <div className='projectTitle'>{title}</div>
                 <div className='projectImg'>
                     <img src={coverImg} />
                 </div>
+                <div className='projectTitle'>{title}</div>
                 <div className='projectContent'>
                     {content}
                 </div>

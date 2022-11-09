@@ -1,0 +1,27 @@
+.projectApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    background-color: #3c3b3bfe;
+    margin-top: 1rem;
+}
+
+.projectApp .projectTitle{
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.projectApp .projectImg{
+    width: 90%;
+}
+
+.projectApp .projectContent{
+    color: white;
+}
+
+.projectImg img{
+    width: 100%;
+}

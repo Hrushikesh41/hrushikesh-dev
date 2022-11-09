@@ -11,8 +11,9 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
     return (
         <>
-            <ProjectCard coverImg={Resume} title="Resume Builder" content="Let's You Create Your Resume with provided templates. Also Providing Download Functionality in Pdf Format" tryIt="https://resume-builder-phi.vercel.app/" repo="https://github.com/Hrushikesh41/CodingMaster-Resume-Builder" />
+            
             <div className="main_div">
+            {/* <ProjectCard coverImg={Resume} title="Resume Builder" content="Let's You Create Your Resume with provided templates. Also Providing Download Functionality in Pdf Format" tryIt="https://resume-builder-phi.vercel.app/" repo="https://github.com/Hrushikesh41/CodingMaster-Resume-Builder" /> */}
                 <div className="card first">
                     <div className="card-side front">
                         <div>
