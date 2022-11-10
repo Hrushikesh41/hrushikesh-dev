@@ -6,13 +6,38 @@ import toDo from "./assets/toDo.jpg";
 import weatherly from "./assets/weatherly.jpg";
 import blogPost from "./assets/blogPost.jpg";
 import getGit from "./assets/getGit.jpg";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard"
+import FeedSys from "./assets/FeedSys.png"
 
 const Projects = () => {
     return (
         <>
             
             <div className="main_div">
+                <div className="card fifth">
+                    <div className="card-side front">
+                        <div>
+                            <img src={FeedSys} />
+                        </div>
+                    </div>
+                    <div className="card-side back">
+                        <div className="text">
+                            <div className="title">
+                                Feedback Management System
+                            </div>
+                            <div className="info">A feedback management system made using MERN stack through which you can collect feedbacks and responses!</div>
+                            <div className="links">
+                                <div className="try">
+                                    <a href="https://feedsys.netlify.app/" target="_blank">Try It</a>
+                                </div>
+                                <div className="repo">
+                                    <a href="https://github.com/murtuzaalisurti/feedback-management-system" target="_blank">GitHub Repo</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             {/* <ProjectCard coverImg={Resume} title="Resume Builder" content="Let's You Create Your Resume with provided templates. Also Providing Download Functionality in Pdf Format" tryIt="https://resume-builder-phi.vercel.app/" repo="https://github.com/Hrushikesh41/CodingMaster-Resume-Builder" /> */}
                 <div className="card first">
                     <div className="card-side front">
@@ -118,30 +143,6 @@ const Projects = () => {
                 </div>
 
                 {/* GetGit */}
-                <div className="card fifth">
-                    <div className="card-side front">
-                        <div>
-                            <img src={getGit} />
-                        </div>
-                    </div>
-                    <div className="card-side back">
-                        <div className="text">
-                            <div className="title">
-                                GetGit
-                            </div>
-                            <div className="info">Provides you with desired user's GitHub Information .</div>
-                            <div className="links">
-                                <div className="try">
-                                    <a href="https://hrushikesh41.github.io/CodingMaster-GetGit/" target="_blank">Try It</a>
-                                </div>
-                                <div className="repo">
-                                    <a href="https://github.com/Hrushikesh41/CodingMaster-GetGit" target="_blank">GitHub Repo</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </>
