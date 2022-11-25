@@ -125,104 +125,6 @@
   height: 100%;
 }
 
-.card {
-  perspective: 150rem;
-  position: relative;
-  max-width: 400px;
-  margin: 2rem;
-  box-shadow: none;
-  background: none;
-  width: 30%;
-}
-
-.card-side {
-  border-radius: 15px;
-  transition: all 0.8s ease;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  width: auto;
-}
-
-.card-side img {
-  height: 250px;
-  width: 350px;
-  border-radius: 10px;
-}
-
-.card-side.back {
-  transform: rotateY(-180deg);
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-}
-
-.card-side.front {
-  background-color: #3c3b3bfe;
-}
-
-.card:hover .card-side.front {
-  transform: rotateY(180deg);
-}
-
-.card:hover .card-side.back {
-  transform: rotateY(0deg);
-}
-
-.card-side.back .text {
-  padding: 1rem;
-}
-
-.card-side.back .text .title {
-  font-size: 1.8rem;
-}
-
-.card-side.back .text .info {
-  margin-top: 1rem;
-  font-size: 1.3rem;
-}
-
-.card-side.back .text .links {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-}
-
-.card-side.back .text .links .try {
-  margin-right: 1rem;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-  padding: 0.7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.card-side.back .text .links .repo {
-  margin-right: 1rem;
-  padding: 0.7rem;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-}
-
-.card-side.back .text .links a {
-  text-decoration: none;
-  color: white;
-}
-
 /* // contact */
 
 .contactMe {
@@ -304,39 +206,102 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 370px) and (max-width: 420px) {
+
+.projectCard{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: #3c3b3bfe;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.projectCard  .projectImg{
+  display: flex;
+  width: 100%;
+}
+
+.projectCard .projectImg img{
+  height: 200px;
+  width: 100%;
+}
+
+.projectCard .projectDetails{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  color: white;
+}
+
+.projectDetails .text .title{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.text .info{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.text .links {
+  display: flex;
+  flex-direction: row;
+  padding: 0.7rem;
+  justify-content: center;
+}
+
+.links .try, 
+.links .repo{
+  margin: 0.3rem 0.7rem 0 0.7rem;
+  background-color: #111111;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+.try a,
+.repo a{
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 301px) and (max-width: 390px) {
   .blogContainer .blog {
     width: 100%;
   }
 
   .main_div {
+    justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
-  .main_div .card {
-    margin: 0;
-    margin-bottom: 2rem;
-    display: flex;
+  .main_div #first{
+    margin-top: 110rem;
+  }
+
+  .projectCard{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 420px) {
+  .blogContainer .blog {
+    width: 100%;
+  }
+
+  .main_div {
+    justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
-  .main_div .first{
-    margin-top: 60rem;
+  .main_div #first{
+    margin-top: 90rem;
   }
 
-  .card .card-side.front {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    position: inherit;
-    width: fit-content;
-  }
-
-  .card .back {
-    width: 90vw;
-    margin-left: 1.3rem;
+  .projectCard{
+    width: 90%;
   }
 }
 
@@ -347,23 +312,6 @@
 }
 
 @media screen and (max-width: 300px) {
-  .main_div .card {
-    flex-wrap: wrap;
-    margin: 0;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .main_div .second,
-  .main_div .third,
-  .main_div .fourth,
-  .main_div .fifth {
-    margin-top: 25rem;
-  }
-
-  .card-side.front img {
-    width: 250px;
-  }
 
   .icons .linkedIN,
   .icons .insta,
@@ -385,6 +333,20 @@
     font-size: 0.9rem;
   }
 
+  .main_div {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .main_div #first{
+    margin-top: 110rem;
+  }
+
+  .projectCard{
+    width: 90%;
+  }
+
 }
 
 @media screen and (min-width: 421px) and (max-width: 500px) {
@@ -393,120 +355,16 @@
   }
 
   .main_div {
+    justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
-  .main_div:nth-child(2) {
-    margin-top: 30rem;
+  .main_div #first{
+    margin-top: 110rem;
   }
 
-  .main_div .card {
-    margin: 0;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  .card .card-side.front {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    position: inherit;
-    width: fit-content;
-  }
-
-  .card-side.front img {
-    width: 380px;
-  }
-
-  .card .back {
-    width: 90vw;
-    margin-left: 1.3rem;
-  }
-}
-
-@media screen and (min-width: 301px) and (max-width: 361px) {
-  .blogContainer .blog {
-    width: 100%;
-  }
-
-  .main_div {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  .main_div .card {
-    margin: 0;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  .main_div .first{
-    margin-top: 60rem;
-  }
-
-  .card .card-side.front {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    position: inherit;
-    width: fit-content;
-  }
-
-  .card-side.front img {
-    width: 325px;
-  }
-
-  .card .back {
-    width: 90vw;
-    margin-left: 1.3rem;
-  }
-}
-
-@media screen and (min-width: 560px) and (max-width: 950px) {
-  .main_div .card {
-    width: 40%;
-  }
-
-  .card-side.front img {
-    width: 275px;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 550px) {
-  .main_div .card {
-    width: 100%;
-  }
-
-  .card-side.front {
-    width: 100%;
-  }
-
-  .card-side.front img {
-    width: 350px;
-  }
-
-  .main_div .second,
-  .main_div .third,
-  .main_div .fourth,
-  .main_div .fifth {
-    margin-top: 18rem;
-  }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
-  .main_div .third,
-  .main_div .fourth,
-  .main_div .fifth {
-    margin-top: 18rem;
-  }
-
-  .main_div .card {
-    margin-right: 8rem;
-    margin-left: 4rem;
+  .projectCard{
+    width: 90%;
   }
 }
