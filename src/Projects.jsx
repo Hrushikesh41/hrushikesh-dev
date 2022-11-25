@@ -12,7 +12,7 @@ const Projects = () => {
 
             <div className="main_div">
             <div className="projectCard" id="first">
-                <div className="projectImg">a
+                <div className="projectImg">
                     <img src={frontify} alt="Nothing to Show" />
                 </div>
                 <div className="projectDetails">
