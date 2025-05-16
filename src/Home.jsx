@@ -38,7 +38,7 @@ const Home = () => {
                         <div className="p2">I am Hrushikesh Kokardekar</div>
                         <div className="p3">A Full Stack Web Developer who likes to create Awesome Websites</div>
                         <div className="p4">
-                            <a href="https://drive.google.com/file/d/14LqNCeArx0CRM3iL_FK-5I6c6M2cqRSK/view?usp=drive_link" target="_blank">Check Resume</a>
+                            <a href="https://drive.google.com/file/d/1xVsXtF1x8rQHr6Yy4CtQO41AvLEXe94w/view?usp=sharing" target="_blank">Check Resume</a>
                         </div>
                     </div>
                 </div>
